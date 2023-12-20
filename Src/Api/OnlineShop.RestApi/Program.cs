@@ -1,8 +1,10 @@
 using OnlineShop.RestApi.Configs.MigrationConfigs;
+using OnlineShop.RestApi.Configs.ServiceConfigs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.ConfigureServices();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

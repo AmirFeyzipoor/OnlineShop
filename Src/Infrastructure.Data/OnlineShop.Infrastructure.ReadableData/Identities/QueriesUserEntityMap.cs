@@ -2,11 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using OnlineShop.Entities.Identities;
 
-namespace OnlineShop.Infrastructure.WritableData.Identities;
+namespace OnlineShop.Infrastructure.ReadableData.Identities;
 
-public class UserEntityMap : IEntityTypeConfiguration<User>
+public class QueriesUserEntityMap : IEntityTypeConfiguration<QueriesUser>
 {
-    public void Configure(EntityTypeBuilder<User> builder)
+    public void Configure(EntityTypeBuilder<QueriesUser> builder)
     {
         builder.ToTable("Users");
 
@@ -17,7 +17,5 @@ public class UserEntityMap : IEntityTypeConfiguration<User>
             .IsRequired();
         
         builder.Property(_ => _.CreationDate).IsRequired();
-
-        builder.Property(_ => _.PasswordHash).IsRequired();
     }
 }

@@ -7,7 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+        <PackageReference Include="Moq" Version="4.17.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Src\Core\OnlineShop.UseCases\OnlineShop.UseCases.csproj" />
     </ItemGroup>
 
 </Project>

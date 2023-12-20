@@ -1,9 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using OnlineShop.Infrastructure.Data.Shared;
 
 namespace OnlineShop.Infrastructure.ReadableData;
 
-public class ReadableDb : BaseDb
+public class ReadableDb : DbContext
 {
     public ReadableDb(string connectionString)
         : this(new DbContextOptionsBuilder<ReadableDb>()

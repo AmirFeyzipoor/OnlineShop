@@ -1,9 +1,19 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using OnlineShop.Infrastructure.Data.Shared;
+using OnlineShop.Entities.Identities;
 
 namespace OnlineShop.Infrastructure.WritableData;
 
-public class WritableDb : BaseDb
+public class WritableDb : IdentityDbContext<
+    User,
+    IdentityRole,
+    string,
+    UserClaim,
+    IdentityUserRole<string>,
+    IdentityUserLogin<string>,
+    IdentityRoleClaim<string>,
+    IdentityUserToken<string>>
 {
     public WritableDb(string connectionString)
         : this(new DbContextOptionsBuilder<WritableDb>()
