@@ -25,5 +25,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 builder.UpdateDataBases();
+builder.UpdateReadableDataBases();
 
 app.Run("http://localhost:5104");

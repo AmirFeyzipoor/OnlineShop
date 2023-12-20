@@ -23,6 +23,7 @@
       <ProjectReference Include="..\..\Core\OnlineShop.UseCases\OnlineShop.UseCases.csproj" />
       <ProjectReference Include="..\..\Infrastructure.Data\OnlineShop.Infrastructure.Data\OnlineShop.Infrastructure.Data.csproj" />
       <ProjectReference Include="..\..\Migration\OnlineShop.Migrations\OnlineShop.Migrations.csproj" />
+      <ProjectReference Include="..\..\Migration\OnlineShop.ReadableDataMigrations\OnlineShop.ReadableDataMigrations.csproj" />
     </ItemGroup>
 
 </Project>
