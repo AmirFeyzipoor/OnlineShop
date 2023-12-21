@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineShop.Entities.Identities;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts.Repositories;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts.Repositories;
 
 namespace OnlineShop.Infrastructure.ReadableData.Identities;
 

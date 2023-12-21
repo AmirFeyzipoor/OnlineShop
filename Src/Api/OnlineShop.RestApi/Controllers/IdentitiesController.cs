@@ -1,7 +1,8 @@
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts;
+using OnlineShop.UseCases.Identities.Commands.Login.Contracts;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts;
 
 namespace OnlineShop.RestApi.Controllers;
 
@@ -16,10 +17,20 @@ public class IdentitiesController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpPost]
+    [HttpPost("register")]
     [AllowAnonymous]
     public async Task<string> RegisterUser(RegisterUserCommand command)
     {
         return await _mediator.Send(command);
+    }
+
+    [HttpPost("login")]
+    [AllowAnonymous]
+    public async Task<IActionResult> Login(LoginUserCommand command)
+    {
+        return Ok(new
+        {
+            AccessToken = await _mediator.Send(command)
+        });
     }
 }

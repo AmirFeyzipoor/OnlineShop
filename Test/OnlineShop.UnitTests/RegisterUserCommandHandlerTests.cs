@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Identity;
 using Moq;
 using OnlineShop.Entities.Identities;
 using OnlineShop.TestTools.Identities;
-using OnlineShop.UseCases.Identities.Commands.Add;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts.Events;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts.Exceptions;
+using OnlineShop.UseCases.Identities.Commands.Register;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts.Events;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts.Exceptions;
 using OnlineShop.UseCases.Infrastructures;
 
 namespace OnlineShop.UnitTests;

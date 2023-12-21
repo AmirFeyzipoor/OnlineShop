@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace OnlineShop.UseCases.Identities.Commands.Add.Contracts.Events;
+namespace OnlineShop.UseCases.Identities.Commands.Register.Contracts.Events;
 
 public class UpdateReadableDbAfterRegisterUserEvent : INotification
 {

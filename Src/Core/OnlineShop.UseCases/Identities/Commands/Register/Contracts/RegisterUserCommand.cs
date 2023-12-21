@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using MediatR;
 
-namespace OnlineShop.UseCases.Identities.Commands.Add.Contracts;
+namespace OnlineShop.UseCases.Identities.Commands.Register.Contracts;
 
 public class RegisterUserCommand : IRequest<string>
 {

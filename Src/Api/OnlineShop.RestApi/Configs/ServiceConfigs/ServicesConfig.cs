@@ -8,8 +8,9 @@ using OnlineShop.Infrastructure.ReadableData.Identities;
 using OnlineShop.Infrastructure.WritableData;
 using OnlineShop.RestApi.Configs.AutoMapperConfigs;
 using OnlineShop.RestApi.Configs.ServiceConfigs.ServicesPrerequisites;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts.Repositories;
+using OnlineShop.UseCases.Identities.Commands.Login;
+using OnlineShop.UseCases.Identities.Commands.Login.Contracts.TokenConfigs;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts;
 using OnlineShop.UseCases.Infrastructures;
 
 namespace OnlineShop.RestApi.Configs.ServiceConfigs;
@@ -49,6 +50,8 @@ public static class ServicesConfig
             })
             .AddEntityFrameworkStores<WritableDb>()
             .AddDefaultTokenProviders();
+        
+        builder.Services.Configure<JwtBearerTokenSettings>(builder.Configuration.GetSection("JwtBearerTokenSettings"));
 
         builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
         builder.Host.ConfigureContainer<ContainerBuilder>(b => b

@@ -1,6 +1,6 @@
 using OnlineShop.UseCases.Infrastructures;
 
-namespace OnlineShop.UseCases.Identities.Commands.Add.Contracts.Exceptions;
+namespace OnlineShop.UseCases.Identities.Commands.Register.Contracts.Exceptions;
 
 public class FailedCreateUserException : BusinessException
 {

@@ -2,7 +2,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Moq;
 using OnlineShop.Entities.Identities;
-using OnlineShop.UseCases.Identities.Commands.Add;
+using OnlineShop.UseCases.Identities.Commands.Register;
 using OnlineShop.UseCases.Infrastructures;
 
 namespace OnlineShop.TestTools.Identities;

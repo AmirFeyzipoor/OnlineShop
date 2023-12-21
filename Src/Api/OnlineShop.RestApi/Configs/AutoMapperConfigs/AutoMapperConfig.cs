@@ -1,7 +1,6 @@
 using AutoMapper;
 using OnlineShop.Entities.Identities;
-using OnlineShop.UseCases.Identities.Commands.Add;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts;
 
 namespace OnlineShop.RestApi.Configs.AutoMapperConfigs;
 

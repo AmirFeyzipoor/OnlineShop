@@ -1,8 +1,8 @@
 using MediatR;
 using OnlineShop.Entities.Identities;
-using OnlineShop.UseCases.Identities.Commands.Add.Contracts.Repositories;
+using OnlineShop.UseCases.Identities.Commands.Register.Contracts.Repositories;
 
-namespace OnlineShop.UseCases.Identities.Commands.Add.Contracts.Events;
+namespace OnlineShop.UseCases.Identities.Commands.Register.Contracts.Events;
 
 public class UpdateReadableDbAfterRegisterUserEventNotificationHandler : INotificationHandler<UpdateReadableDbAfterRegisterUserEvent>
 {
