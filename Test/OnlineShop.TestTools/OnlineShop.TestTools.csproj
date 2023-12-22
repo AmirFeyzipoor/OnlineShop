@@ -12,6 +12,14 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Src\Core\OnlineShop.UseCases\OnlineShop.UseCases.csproj" />
+      <ProjectReference Include="..\..\Src\Infrastructure.Data\OnlineShop.Infrastructure.Data\OnlineShop.Infrastructure.Data.csproj" />
+      <ProjectReference Include="..\..\Src\Infrastructure.Data\OnlineShop.Infrastructure.WritableData\OnlineShop.Infrastructure.WritableData.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\7.0.13\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

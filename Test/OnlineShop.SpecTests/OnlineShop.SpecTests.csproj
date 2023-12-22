@@ -29,6 +29,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Src\Infrastructure.Data\OnlineShop.Infrastructure.Data\OnlineShop.Infrastructure.Data.csproj" />
       <ProjectReference Include="..\..\Src\Infrastructure.Data\OnlineShop.Infrastructure.ReadableData\OnlineShop.Infrastructure.ReadableData.csproj" />
       <ProjectReference Include="..\..\Src\Infrastructure.Data\OnlineShop.Infrastructure.WritableData\OnlineShop.Infrastructure.WritableData.csproj" />
       <ProjectReference Include="..\OnlineShop.TestTools\OnlineShop.TestTools.csproj" />
@@ -39,6 +40,15 @@
       <Content Include="appsettings.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Http">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\7.0.13\Microsoft.AspNetCore.Http.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\7.0.13\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

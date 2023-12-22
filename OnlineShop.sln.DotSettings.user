@@ -6,5 +6,6 @@
     &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.RegisterUserCommandHandlerTests.Handle_throw_exception_when_Create_User_Failed&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.LoginUserCommandHandlerTests.Handle_login_user_proper&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.LoginUserCommandHandlerTests.Handle_throw_exception_when_wrong_username_or_password&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::4466DE15-8A82-4C1F-BA6B-E9E3FC073214::net7.0::OnlineShop.SpecTests.Products.Add.Success.Run&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

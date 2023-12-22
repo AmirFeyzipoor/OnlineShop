@@ -1,4 +1,3 @@
-
 using OnlineShop.Infrastructure.ReadableData;
 using OnlineShop.Infrastructure.WritableData;
 using OnlineShop.UseCases.Infrastructures;
@@ -18,14 +17,17 @@ public class UnitOfWork : IUnitOfWork
 
     public async Task SaveChangesAsync()
     {
-        try
-        {
-            await _writableDb.SaveChangesAsync();
-            await _readableDb.SaveChangesAsync();
-        }
-        catch (Exception e)
-        {
-            throw new Exception(e.Message);
-        }
+        await _writableDb.SaveChangesAsync();
+        await _readableDb.SaveChangesAsync();
+    }
+
+    public async Task SaveChangesAsyncForWritableDb()
+    {
+        await _writableDb.SaveChangesAsync();
+    }
+
+    public async Task SaveChangesAsyncForReadableDb()
+    {
+        await _readableDb.SaveChangesAsync();
     }
 }
