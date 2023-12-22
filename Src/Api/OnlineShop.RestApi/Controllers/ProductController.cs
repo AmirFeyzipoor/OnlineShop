@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShop.UseCases.Products.Commands.Add.Contracts;
 using OnlineShop.UseCases.Products.Commands.Delete.Contracts;
+using OnlineShop.UseCases.Products.Commands.Edit.Contracts;
 using OnlineShop.UseCases.Products.Queries.GetAll.Contracts;
 using OnlineShop.UseCases.Products.Queries.GetAll.Contracts.Dtos;
 
@@ -41,5 +42,14 @@ public class ProductController : ControllerBase
     public async Task Delete(int id)
     {
         await _mediator.Send(new DeleteProductCommand(id));
+    }
+
+    [HttpPatch("{id}")]
+    [Authorize]
+    public async Task Edit(int id, EditProductCommand command)
+    {
+        command.SetProductId(id);
+        
+        await _mediator.Send(command);
     }
 }

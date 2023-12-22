@@ -41,4 +41,9 @@ public class ProductRepository : IProductRepository
     {
         _products.Remove(product);
     }
+
+    public void Update(Product product)
+    {
+        _products.Update(product);
+    }
 }

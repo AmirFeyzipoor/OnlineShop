@@ -57,4 +57,9 @@ public class QueriesProductRepository : IQueriesProductRepository
     {
         return await _products.FirstOrDefaultAsync(_ => _.Id == id);
     }
+
+    public void Update(QueriesProduct product)
+    {
+        _products.Update(product);
+    }
 }
