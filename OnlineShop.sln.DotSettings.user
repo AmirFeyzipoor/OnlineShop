@@ -9,5 +9,8 @@
     &lt;TestId&gt;xUnit::4466DE15-8A82-4C1F-BA6B-E9E3FC073214::net7.0::OnlineShop.SpecTests.Products.Add.Success.Run&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.GetAllProductQueryHandler.Handle_get_all_products_properly&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.GetAllProductQueryHandlerTests.Handle_get_all_products_properly&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.DeleteProductCommandHandlerTests.Handle_delete_product_properly&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.DeleteProductCommandHandlerTests.Handle_throw_ProductNotFoundException_when_not_found_product&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::D790EA9A-A421-41B1-85E9-7D64655BE7F8::net7.0::OnlineShop.UnitTests.DeleteProductCommandHandlerTests.Handle_throw_UnauthorizedDeleteProductAccessException_when_user_not_have_access&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

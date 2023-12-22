@@ -8,4 +8,6 @@ public interface IQueriesProductRepository : Repository
 {
     Task Add(QueriesProduct product);
     Task<List<GetAllProductDto>> GetAll(GetAllProductFilterDto filter);
+    void Delete(QueriesProduct product);
+    Task<QueriesProduct?> Find(int id);
 }

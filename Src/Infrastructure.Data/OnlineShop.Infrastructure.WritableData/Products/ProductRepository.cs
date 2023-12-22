@@ -31,4 +31,14 @@ public class ProductRepository : IProductRepository
     {
         await _products.AddAsync(product);
     }
+
+    public async Task<Product?> Find(int id)
+    {
+        return await _products.FirstOrDefaultAsync(_ => _.Id == id);
+    }
+
+    public void Delete(Product product)
+    {
+        _products.Remove(product);
+    }
 }

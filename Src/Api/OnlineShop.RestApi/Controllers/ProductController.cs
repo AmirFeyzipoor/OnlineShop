@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShop.UseCases.Products.Commands.Add.Contracts;
+using OnlineShop.UseCases.Products.Commands.Delete.Contracts;
 using OnlineShop.UseCases.Products.Queries.GetAll.Contracts;
 using OnlineShop.UseCases.Products.Queries.GetAll.Contracts.Dtos;
 
@@ -33,5 +34,12 @@ public class ProductController : ControllerBase
         [FromQuery] GetAllProductFilterDto filter)
     {
         return await _mediator.Send(new GetAllProductQuery(filter));
+    }
+
+    [HttpDelete("{id}")]
+    [Authorize]
+    public async Task Delete(int id)
+    {
+        await _mediator.Send(new DeleteProductCommand(id));
     }
 }

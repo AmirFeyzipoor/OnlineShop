@@ -47,4 +47,14 @@ public class QueriesProductRepository : IQueriesProductRepository
 
         return await products.ToListAsync();
     }
+
+    public void Delete(QueriesProduct product)
+    {
+        _products.Remove(product);
+    }
+
+    public async Task<QueriesProduct?> Find(int id)
+    {
+        return await _products.FirstOrDefaultAsync(_ => _.Id == id);
+    }
 }

@@ -7,4 +7,6 @@ public interface IProductRepository : Repository
 {
     Task<bool> IsExist(string manufactureEmail, DateTime produceDate);
     Task Add(Product product);
+    Task<Product?> Find(int id);
+    void Delete(Product product);
 }

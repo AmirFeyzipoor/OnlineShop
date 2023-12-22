@@ -21,6 +21,7 @@ public class AddProductCommand : IRequest<int>
     [EmailAddress]
     public string ManufactureEmail { get; set; }
     [Required]
+    [MaxLength(50)]
     public string Name { get; set; }
     public bool IsAvailable { get; set; }
     public string? ManufacturePhone { get; set; }
